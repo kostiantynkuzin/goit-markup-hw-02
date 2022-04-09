@@ -2,7 +2,6 @@
   --title-color: #212121;
   --accent-color: #2196f3;
 }
-
 body {
   font-family: "Roboto", sans-serif;
   color: #757575;
@@ -25,7 +24,18 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
 /* ..................................................header................................................ */
 .header-logo {
   font-family: "Raleway";
@@ -61,7 +71,6 @@ body {
 .hero {
   background: #2f303a;
 }
-
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -81,10 +90,9 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   color: #ffffff;
-  background: #2196f3;
+  background: var(--accent-color);
   cursor: pointer;
 }
-
 .description-title {
   font-weight: 700;
   font-size: 14px;
@@ -152,4 +160,37 @@ body {
 }
 .footer-logo-link-second {
   color: #ffffff;
+}
+/* ............................................portfolio.................................................... */
+.portfolio-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  cursor: pointer;
+}
+.portfolio-button.current {
+  color: #ffffff;
+  background-color: var(--accent-color);
+}
+.portfolio-button:hover,
+.portfolio-button:focus {
+  color: #ffffff;
+  background-color: var(--accent-color);
+}
+.portfolio-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-color);
+}
+.portfolio-text {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: #757575;
 }
