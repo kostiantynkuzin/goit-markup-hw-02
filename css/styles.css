@@ -20,14 +20,6 @@ body {
 .list {
   list-style: none;
 }
-.item {
-  font-family: inherit;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-}
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -149,14 +141,22 @@ body {
 .footer {
   background-color: #2f303a;
 }
+.footer-link,
+.footer-tel,
+.footer-mail {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
 .footer-link {
   color: var(--primary-white-color);
 }
-
 .footer-tel,
 .footer-mail {
   color: rgba(255, 255, 255, 0.6);
-  text-decoration: none;
 }
 .footer .logo {
   color: var(--primary-white-color);
